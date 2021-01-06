@@ -1,4 +1,4 @@
-Feature: Login_Logout
+Feature: Alta_Baja
 
   Scenario: Alta
     Given we visit the "website"
