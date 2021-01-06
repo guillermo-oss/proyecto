@@ -1,0 +1,27 @@
+# Web Drivers   
+minium:
+  webdriver:
+    desiredCapabilities:
+      browserName: chrome
+    window:
+      maximized: true
+
+# Configuration that can be injected in your tests
+inium:
+  developer:
+    webdrivers:
+      - name: chrome
+        displayName: Chrome
+        iconClass: icon-chrome
+        desiredCapabilities:
+          browserName: chrome
+        chromeOptions:
+          args:
+            - user-data-dir=/path/to/your/custom/profile
+            - start-maximized
+          binary: /path/to/other/chrome/binary
+          extensions:
+            - /path/to/extension.crx
+          preferences:
+            profile.default_content_settings.popups: 0
+
